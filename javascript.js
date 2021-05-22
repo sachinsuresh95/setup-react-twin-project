@@ -1,5 +1,6 @@
 exports.template = `import React from "react";
 import ReactDOM from "react-dom";
+import GlobalStyles from "./styles/GlobalStyles";
 import tw, { styled } from "twin.macro";
 
 const Welcome = styled.h1\`
@@ -14,6 +15,7 @@ const root = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyles />
     <App />
   </React.StrictMode>,
   root

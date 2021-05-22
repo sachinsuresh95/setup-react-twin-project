@@ -35,12 +35,14 @@ shell.echo("Done setting up dependencies.");
 shell.echo("Setting up directories and initial files...");
 
 shell.mkdir("src");
+shell.mkdir("src/styles");
 shell.touch("webpack.config.js");
 shell.touch(".babelrc");
 shell.touch(".gitignore");
 shell.touch("babel-plugin-macros.config.js");
 shell.touch("src/index.html");
 shell.touch("src/index.js");
+shell.touch("src/styles/GlobalStyles.js");
 
 shell.ShellString(html.template).to("src/index.html");
 shell.ShellString(js.template).to("src/index.js");
@@ -49,7 +51,12 @@ shell.ShellString(babelConfig.template).to(".babelrc");
 shell.ShellString(babelMacros.template).to("babel-plugin-macros.config.js");
 shell.ShellString("node_modules").to(".gitignore");
 
+//init tailwind config
+shell.echo("Creating tailwind config file...");
+shell.exec("npx tailwindcss init");
+
 //add webpack scripts to package.json
+shell.echo("Updating scripts in package.json");
 editPackageJson({
   key: "dev",
   value: "webpack serve",
