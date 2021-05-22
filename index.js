@@ -4,6 +4,7 @@ const editPackageJson = require("@rogerpence/edit-package-json");
 
 const html = require("./html");
 const js = require("./javascript");
+const globalStyles = require("./globalStyles");
 const dependencies = require("./dependencies");
 const devDependencies = require("./devDependencies");
 const webpackConfig = require("./webpack");
@@ -46,6 +47,7 @@ shell.touch("src/styles/GlobalStyles.js");
 
 shell.ShellString(html.template).to("src/index.html");
 shell.ShellString(js.template).to("src/index.js");
+shell.ShellString(globalStyles.template).to("src/styles/GlobalStyles.js");
 shell.ShellString(webpackConfig.template).to("webpack.config.js");
 shell.ShellString(babelConfig.template).to(".babelrc");
 shell.ShellString(babelMacros.template).to("babel-plugin-macros.config.js");
