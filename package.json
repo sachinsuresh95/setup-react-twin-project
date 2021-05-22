@@ -1,0 +1,24 @@
+{
+  "name": "@sachin.suresh/setup-react-twin-project",
+  "version": "1.0.0",
+  "description": "Set up a new react project with tailwind and twin.macro",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinsuresh95/setup-react-twin-project.git"
+  },
+  "author": "Sachin Suresh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinsuresh95/setup-react-twin-project/issues"
+  },
+  "homepage": "https://github.com/sachinsuresh95/setup-react-twin-project#readme",
+  "dependencies": {
+    "@rogerpence/edit-package-json": "^1.1.1",
+    "shelljs": "^0.8.4"
+  }
+}

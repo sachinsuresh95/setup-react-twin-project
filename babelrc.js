@@ -1,0 +1,7 @@
+exports.template = `{
+  "plugins": [
+      "babel-plugin-macros",
+      "@babel/plugin-transform-react-jsx"
+    ]
+}
+`;
