@@ -1,6 +1,6 @@
 {
   "name": "@sachin.suresh/setup-react-twin-project",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Set up a new react project with tailwind and twin.macro",
   "main": "index.js",
   "bin": "./index.js",
