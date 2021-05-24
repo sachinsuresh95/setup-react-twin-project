@@ -1,4 +1,4 @@
-module.exports = `import React from "react"
+exports.template = `import React from "react"
 import { createGlobalStyle } from "styled-components"
 import tw, { theme, GlobalStyles as BaseStyles } from "twin.macro"
 
